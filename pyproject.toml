@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bike-stats"
+version = "0.1.0"
+description = "App to record your bike settings"
+authors = ["ninz <nreclarin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bike_stats"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.92.0"
+SQLAlchemy = "^2.0.4"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
